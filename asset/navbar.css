@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.root{
+    margin: 0;
+    padding: 0;
+    --green: rgb(43 196 138);
+
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    width: 100%;
+    border: 1px solid red;
+    justify-content: space-between;
+
+}
+.navbar img{
+    width: 32px;
+    height: 32px;
+}
+.nama{
+    display: flex;
+    align-items: center;
+}
+.nama h3{
+    padding-left: 1em ;
+}
+.navigasi{
+    margin-right: 1em;
+}
+.navigasi ul{
+    display: flex;
+}
+.navigasi ul li{
+    list-style: none;
+    padding: .5em 1em .5em 1em;
+    text-align: center;
+    display: flex;
+    align-self: center;
+    border-radius: 10px;
+}
+.navigasi ul li:hover{
+    transition: .5s;
+    background: lightblue;
+    color: white;
+}

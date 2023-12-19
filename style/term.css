@@ -1,0 +1,46 @@
+#term{
+    border-radius:20px;
+    background-color: rgba(165, 183, 198, 0.3);
+    width: 90%;
+    margin: auto;
+    margin-top:2em ;
+    margin-bottom:2em ;
+    display: flex;
+    align-items: center;
+    --green: #2bc48a;
+    display: flex;
+    flex-direction: column;
+
+}
+.termContainer{
+    margin: 3em 0 3em 0;
+    height: 480px;
+    overflow: scroll;
+    width: 80%;
+    background: white;
+    padding: 3em;
+    border-radius:20px ;
+}
+.buttonTerm{
+    color: black;
+    border: 1px solid grey;
+    padding: .5em 2em .5em 2em;
+    margin-bottom: 2em;
+    width: 50%;
+    text-align: center;
+    border-radius:30px;
+}
+.button a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.buttonTerm:hover{
+    font-weight:bolder;
+    border: none;
+    background-color: var(--green);
+    transition-duration: .5s;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 10px 2px var(--green);
+    color: white;
+}

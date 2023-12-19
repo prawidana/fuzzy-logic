@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    --hitam: rgb(11 34 57);
+    --blue: rgb(239 243 246);
+    --green: rgb(43 196 138);
+    --abu: rgb(165 183 198);
+    --yellow: rgb(252 161 32);
+    --dongker:rgb(14 42 71);
+    
+}
+.menus{
+  width: 100%;
+  height: 480px;
+  display: flex;
+  flex-direction: column ;
+  border: 1px solid red;
+  position: relative;
+  margin: auto;
+}
+.menusImg{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.menusImg img{
+    
+    margin:auto;
+    width:100%;
+    z-index: 50;
+    display: absolute;
+    /* vertical-align: center; */
+
+}
+.menus h1{
+    color: white;
+    padding-bottom:1em;
+    
+    text-align: center;
+}
+.isi ul a{
+    text-decoration: none;
+    color: white;
+}
+.menus .isi ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    /* background-color: white; */
+    color: white;
+
+}
+.menus .isi ul{
+    display: flex;
+    
+    justify-content: space-around;
+    margin: auto;
+}
+.menus .isi ul li img{
+    width: 32px;
+    height: 32px;
+    padding: .5em;
+    border-radius: 50%;
+    background-color: var(--green);
+    justify-items: center;
+    margin-bottom: .5em;
+    margin: auto;
+
+}
+
+.menus .menusJudul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .5em;
+    position: relative;
+}
+.menus .menusJudul img{
+    
+    width: 26px;
+
+}
+.menus .menusJudul h4{
+    padding-left:.5em ;
+    font-weight: bolder;
+    color: white;
+}

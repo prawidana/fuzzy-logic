@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    --hitam: rgb(11 34 57);
+    --blue: #eff3f6;
+    --green: #2bc48a;
+    --abu: rgb(165 183 198);
+    --yellow: rgb(252 161 32);
+    --dongker:rgb(14 42 71);
+    font-family: "Poppins";
+
+}
+
+.navbar{
+    margin: 0;
+    padding: 1em 0 1em 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+    justify-content: space-between;
+}
+.navbar img{
+    width: 20px;
+    height: 20px;
+}
+.nama{
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+.nama h3{
+    padding-left: 1em ;
+}
+.navigasi{
+    padding-right: 1em;
+}
+.navigasi ul{
+    display: flex;
+}
+.navigasi ul li {
+    list-style: none;
+    
+}
+.navigasi a{
+    text-decoration: none;
+    color: black;
+    padding: .5em 1em .5em 1em;
+    text-align: center;
+    display: flex;
+    align-self: center;
+    border-radius: 10px;
+}
+.navigasi ul li a:hover{
+    transition: .5s;
+    background: var(--green);
+    color: white;
+}
+#body{
+    margin: 0 10em 0 10em;
+}
+header{
+    margin: 0;
+    padding: 0;
+}
+.inpo ul{
+    display: flex;
+}
+.inpo ul li{
+    padding: 1em;
+    list-style: none;
+}
+.inpo ul li a{
+    text-decoration:none;
+
+}
+.inpo a{
+    text-decoration: none;
+    color: black;
+}
+.inpo ul li:hover{
+    font-weight: bolder;
+    transition-timing-function: ease-in;
+    transition-delay: .5s;
+    transition: .5s;
+    color: var(--green);
+}
+
+
+.footer{
+    font-size: 10px;
+    display: flex;
+    background-color: var(--hitam);
+    color: white;
+    padding: 2em;
+}
+.footer hr{
+    margin: 0;
+}
+.bromo, .ijen, .milky, .hiking{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+.bromo ul li,
+.ijen ul li,
+.milky ul li,
+.hiking ul li
+{
+    margin:1em;
+}
+.footer hr{
+    width: 150px;
+}
+.judulFooter img{
+    margin-top: 2em;
+}
+.created{
+    background-color: var(--dongker);
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+.created hr{
+    width: 80%;
+    margin: auto;
+}
+#container{
+    display: flex;
+    flex: row;
+    margin: 2em 10em 3em 10em;
+    height: auto;
+}
+.judulImg{
+    width: 100%;
+    height: auto;
+}
+.judulImg img{
+    width: 480px;
+    height: 100%;
+
+}
+.judul{
+    align-self: center;
+    margin: 2em;
+}
+.judul h1{
+    font-weight: bolder;
+}
+.button{
+    border: solid 1px var(--green);
+    padding: 1em 2em 1em 2em;
+    border-radius:30px ;
+}
+.judul a{
+    text-decoration: none;
+    color: black;
+}
+.button:hover{
+    background-color: var(--green);
+    box-shadow: 0 0 10px var(--green);
+    color: white;
+    transition-duration: .5s;
+    font-weight: bolder;
+    animation-timing-function: ease-in-out;
+}
+#unggul{
+    display:flex;
+    gap: 2em;
+    margin: 5em;
+}
+.card{
+    border: solid 0.5px var(--green);
+    padding:2em;
+    border-radius: 20px;
+}
+.card:hover{
+    background-color: var(--green);
+    color: white;
+    box-shadow: 0 0 10px 2px var(--green);
+    transform: scale(1.1);
+    transition-duration: .5s;
+}
+.txt p{
+    font-weight: small;
+}
+#fasilitas{
+    display: flex;
+    height: 480px;
+    margin: auto;
+    justify-content: space-evenly;
+    background-color: var(--green);
+    color:white;
+}
+.fasilitasImg{
+    height: 480px;
+    width: 480px;
+
+}
+.fasilitasImg img{
+    width: 100%;
+}
+.fasilitasTxt{
+    align-self: center;
+}
+.fasilitasTxt ul{
+    list-style-image: url('../img/icon/success.png');
+}
+.fasilitasTxt{
+    align-items: center;
+}
+#melayani{
+    margin-top: 5em ;
+    height: 480px;
+}
+.melayaniImg{
+    height:100%;
+   
+}
+.melayaniImg img{
+
+    height: 100%;
+    display: flex;
+    margin: auto;
+}
+.melayaniTxt{
+    text-align: center;
+}
+.foto{
+    padding-top: 1em;
+    display: flex;
+    gap: 2em;
+    bottom: 0;
+}
+.fotoImg img{
+    width:100px;
+    border-radius: 50%;
+    height:100px;
+}
+.txtImg{
+    align-self: center;
+}
+.star img{
+    width:20px;
+    height: 20px;
+}
+.star{
+    padding: 1em;
+}
+#abi{
+    margin: auto;
+    width: 75%;
+    position: relative;
+}
+.abiContainer{
+
+    background: white;
+    margin: 1em;
+}
+.abiFoto{
+    width: 100px;
+    position: absolute;
+    top: 2em;
+    margin-left: 2em;
+}
+.abiFoto img{
+    width: 100%;
+    border: 7px solid white;
+    border-radius: 50%;
+}
+.abiFoto :hover{
+    transform: scale(1.2);
+    transition-duration: .5s;
+    animation-timing-function: ease-in;
+}
+.abiCover{
+    position: relative;
+    height:100px;
+    background-image:  radial-gradient( circle 369px at -2.9% 12.9%,  rgba(247,234,163,1) 0%, rgba(236,180,238,0.56) 46.4%, rgba(163,203,247,1) 100.7% );
+}
+.abiTxt{
+    margin: 2em;
+    display: flex; 
+    justify-content: space-between;
+}
+.abiBiodata{
+    display: flex;
+    flex-direction: column;
+}
+.detail{
+    display: flex;
+    align-items: end;
+}
+.detail p{
+    padding: .2em 1em .2em 1em;
+    border: 1px solid var(--green);
+    border-radius: 20px;
+    margin: .5em;
+}
+@media only screen and (max-width:1000px){
+    .navbar{
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+    }
+    #container{
+        display: flex;
+        flex-direction: column ;
+        height: auto;
+        margin: 2em;
+    }
+    .judulImg{
+        margin: auto;
+
+    }
+    .judulImg img{
+        width: 100%;
+    }
+    #fasilitas{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .fasilitasImg{
+        margin: auto;
+    }
+    .fasilitasTxt{
+        margin-bottom: 5em ;
+        
+    }
+    #melayani{
+        height: 100%;
+    }
+    .melayaniImg{
+        width: 100%;
+    }
+    .melayaniImg img{
+        width: 100%;
+    }
+    #unggul{
+        display: flex;
+        flex-direction: column;
+    }
+    #unggul p{
+        font-size: small;
+    }
+    .abiTxt{
+        display: flex;
+        flex-direction: column;
+    }
+    .detail{
+        font-size: smaller;
+        margin: .5em;
+    }
+}
+@media only screen and (max-width:640px) {
+    .detail{
+        display: flex;
+        flex-direction: column;
+    }
+    .detail p{
+        width: 80%;
+
+    }
+}

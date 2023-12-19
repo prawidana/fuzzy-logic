@@ -1,0 +1,523 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    --hitam: rgb(11 34 57);
+    --blue: rgb(239 243 246);
+    --green: rgb(43 196 138);
+    --abu: rgb(165 183 198);
+    --yellow: rgb(252 161 32);
+    --dongker:rgb(14 42 71);
+    
+    font-family: "Poppins";
+}
+
+.menus{
+    position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column ;
+  min-height: 480px;
+  overflow: hidden;
+}
+.menusImg{
+    position: absolute;
+    width: 100%;
+    
+    z-index:-5;
+
+}
+.menusImg img{
+
+    width:100%;
+    min-height: 480px   ;
+}
+
+.isi ul a{
+    text-decoration: none;
+    color: white;
+}
+.isi ul{
+    display: flex;
+    
+    justify-content: space-around;
+    margin: auto;
+}
+.isi ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 1em;
+    justify-items: center;
+    margin-bottom: .5em;
+    margin: auto;
+
+}
+.isi img:hover{
+    transition-duration: .5s;
+    animation-timing-function: ease-in-out;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px 2px var(--green);
+
+}
+.menusJudul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .5em;
+}
+.isi img{
+    background-color: var(--dongker);
+    padding: 1em;
+    border-radius: 50%;
+    align-self: center;
+    width: 26px;
+
+}
+.menusJudul h4{
+    padding-left:.5em ;
+    font-weight: bolder;
+    color: white;
+}
+.isi{
+    margin: auto;
+    width: 60%;
+
+}
+.isi h1{
+    text-align: center;
+    margin-bottom: 1em;
+    color: white;
+    
+}
+
+.destination{
+    margin: 5em;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.destinationImg{
+    
+    gap: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+
+}
+.contentDestinationImg{
+    position: relative;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.contentDestinationImg img{
+    width: 100%;
+    height: 100%;
+}
+.details{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: -30px;
+    left: 0;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background-image: linear-gradient(transparent, var(--green));
+}
+.contentDestinationImg:hover .details{
+    bottom: 0;
+    transition: .5s;
+}
+.details h3{
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+}
+.destination ul{
+    display: flex;
+    
+}
+.destination ul li{
+    padding: .5em 2em .5em 2em;
+    list-style: none;
+    margin: 0 0.5em 0 0 ;
+    border-radius: 20px;
+    border: 1px solid var(--abu);
+    color: black;
+    background-color: white;
+
+}
+.destination ul{
+    padding: 1em 0 1em 0;
+}
+.destination ul li:hover .destinationImg .contentDestinationImg .details{
+    bottom: 0;
+    transition: .5s;
+}
+.destination ul li:hover{
+    background-color: lightblue;
+    transition: .5s;
+}
+.tour{
+    margin: 5em 5em 0 5em;
+    display: flex;
+ }
+.popular{
+    padding: 0 1em 0 0;
+    width: 20%;
+}
+.card{
+    border-radius:20px;
+    display: flex;
+    width: 80%;
+    overflow-y: hidden;
+    overflow-x:visible;
+    height:auto;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+.cardTour{
+    box-shadow: 0px 0px 10px grey;
+    width: 300px;
+    margin-top: 1em;
+    border-radius: 20px;
+    margin-left:2em;
+    margin-bottom: 1em;
+}
+.cardTour:hover{
+    transform: scale(1);
+    box-shadow: 0 0 10px 3px grey;
+}
+.cardTxt{
+    padding:1em;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+
+
+
+
+}
+.cardTxt h3{
+    width: 250px;
+    text-wrap: wrap;
+}
+.cardTxt ul li{
+    margin-left: 1em ;
+    font-size: 10px;
+    line-height: 1;
+}
+.cardImg img{
+    width:100%;
+    height: 150px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.harga{
+    bottom: 0;
+}
+.harga p{
+    color: red;
+}
+.harga h3{
+    font-weight: bolder;
+}
+
+.package{
+    margin: 0 5em 5em 5em;
+   
+    
+}
+.judul{
+    display: flex;
+    margin-top: 4em;
+}
+.judul img{
+    margin-right: .5em;
+    width: 32px;
+    height: 32px;
+}
+.package .bromo ul li{
+    padding: .5em 2em .5em 2em;
+    border: solid 1px var(--abu);
+    list-style: none;
+    border-radius: 20px;
+    justify-content: space-around;
+}
+.package .bromo ul{
+    display: flex;
+}
+.package .bromo ul li:hover{
+    background-color: lightblue;
+    transition: .5s;
+    color: white;
+    border: none;
+    transition-timing-function: ease-in;
+}
+/* .package .bromo ul li:nth-child(1):hover{
+    border: solid red 1px;
+}
+
+.package .bromo ul li:nth-child(2):hover{
+    border: solid orange 1px;
+}
+
+.package .bromo ul li:nth-child(3):hover{
+    border: solid yellow 1px;
+}
+
+.package .bromo ul li:nth-child(4):hover{
+    border: solid greenyellow 1px;
+}
+
+.package .bromo ul li:nth-child(5):hover{
+    border: solid blue 1px;
+} */
+.cardTourPackage{
+    width: 200px;
+    box-shadow: 0 0 5px grey;
+    margin-top: 1em;
+    border-radius: 10px;
+    margin-right: 1em;
+}
+.cardTourPackage:hover{
+    box-shadow: 0 0 10px 3px grey;
+    transition: .5s;
+
+}
+.cardTourPackage:hover hr{
+    transition: .5s;
+    left: 0;
+}
+.cardTourPackage p{
+    font-size: 12px;
+}
+.cardTourPackage a{
+    text-decoration: none;
+    color: black;
+}
+.bromo{
+    margin-top:2em;
+    
+   
+}
+.btn{
+    color: blue;
+    font-weight: bolder;
+    border-radius: 10px;
+    background-color: var(--blue);
+    padding: .5em 3em .5em 3em;
+    margin-bottom: 1em;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    margin-top: 1em;
+    }
+.bromoIsi{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.Isi{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    gap: 1em;
+    flex-wrap: wrap;
+
+    /* flex-wrap: wrap; */
+    /* justify-content: space-evenly; */
+}
+.Isi2{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    gap: 1em;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-evenly; */
+}
+.IsiImg img{
+    width: 400px;
+    height: 400px;
+}
+.ijenIsi{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-evenly;   */
+    width: 100%;
+    overflow-x: scroll;
+    height: auto;
+padding: 1em;
+    gap: 1em;
+}
+.ijenIsi .cardTourPackage:hover{
+    transform: scale(1.05);
+
+}
+.hari2,.hari3,.hari4,.hari5,.hari5lebih{
+    display: flex;
+}
+.hari2 .days{
+    background-color: var(--green);
+    padding: 0 1em 0 0;
+    width: fit-content;
+    color: white;
+}
+.imgTour img{
+    width : 200px;
+    border-top-right-radius:10px;
+    border-top-left-radius: 10px;
+}
+.txtTour{
+    padding: .5em;
+}
+.strike{
+    color: red;
+}
+
+.footer{
+    font-size: 10px;
+    display: flex;
+    background-color: var(--hitam);
+    color: white;
+    padding: 2em;
+}
+
+.bromo, .ijen, .milky, .hiking{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+.bromo ul li,
+.ijen ul li,
+.milky ul li,
+.hiking ul li
+{
+    margin:1em;
+}
+.footer hr{
+    width: 150px;
+}
+.judulFooter img{
+    margin-top: 2em;
+}
+.kontak{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    border-radius: 20px;
+    margin-bottom: 5em;
+    
+}
+.kontak .isiTxt{
+    display: flex;
+}
+.kontak .wa{
+    display: flex;
+    background-color: var(--green);
+    color: white;
+    align-items: center;
+    /* height: fit-content; */
+    border-radius: 20px;
+    font-weight: bold;
+    padding:.5em 2em .5em 2em;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 0;
+}
+.kontak .wa img{
+    padding-right: 0.5em;
+    width: 32px;
+    height: 32px;
+}
+.kontak img{
+    width: 126px;
+    height: 126px;
+    display: flex;
+    align-self: center;
+    /* margin: auto; */
+    padding-right: 3em;
+}
+.created{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-color: var(--dongker);
+    color: white;
+    margin: 0;
+}
+.created hr{
+    width: 80%;
+    border: 1px solid white;
+    margin: auto;
+}
+@media only screen and (max-width:640px){
+    .isi h1{
+        font-size: medium;
+    }
+    .destination{
+        margin: 2em;
+    }
+    .tour{
+        margin: 2em;
+    }
+    .popular h1{
+        font-size: medium;
+    }
+    
+    .package{
+        margin: 1em;
+    }
+    .kontak{
+        display: flex;
+        flex-direction: column;
+    }
+    .Isi{
+        gap:.2em;
+    }
+    .isiTxt{
+        margin-bottom: 1em;
+    }
+    .cardTourPackage{
+        margin:auto
+    }
+    .kontak h3, .kontak p{
+        font-size: small;
+
+    }
+    .wa p{
+        font-size: small;
+        
+    }
+    .wa img{
+        width: 20px;
+        height:20px;
+    }
+    .isiTxt img{
+        width: 50px;
+        height: 50px;
+    }
+}
